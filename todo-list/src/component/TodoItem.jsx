@@ -7,7 +7,8 @@ class TodoItem extends Component {
         const onClick = (e, id)=> {
             if(e.target.className === "delete-item") {
                 if(window.confirm("삭제할까요?")) {
-                    alert("삭제되었습니다")
+                    // alert("삭제되었습니다")
+                    onDeleteItem(id)
                     return false
                 }
             } else {

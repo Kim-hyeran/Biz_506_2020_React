@@ -51,12 +51,19 @@ class todoMain extends Component {
         this.setState({todoList : newTodoList})
     }
 
+    onDeleteItem = (id)=> {
+        const deleteTodoList = this.state.todoList.filter(todo=> {
+            if(todo.id !== Number(id)) return todo
+        })
+        this.setState({todoList : deleteTodoList})
+    }
+
     render() {
         return (
             <main className="todo-main">
                 <h3>TO DO LIST</h3>
                 <TodoInput onCreate={this.onCreate} />
-                <TodoList todoList={this.state.todoList} onToggle = {this.onToggle} />
+                <TodoList todoList={this.state.todoList} onToggle = {this.onToggle} onDeleteItem = {this.onDeleteItem} />
             </main>
         );
     }
