@@ -1,0 +1,22 @@
+div.form {
+    display: flex;
+    padding: 12px;
+}
+
+div.form input {
+    flex: 1;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+
+div.todo-input {
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    background-color: lavender;
+    color: navy;
+    cursor: pointer;
+    transition: color 0.3s linear;
+    position: relative;
+}

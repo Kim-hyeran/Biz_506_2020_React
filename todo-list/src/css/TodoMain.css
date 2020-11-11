@@ -1,0 +1,16 @@
+main.todo-main {
+    background-color: white;
+    width: 520px;
+    margin: 4rem auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+main.todo-main h3 {
+    width: fit-content;
+    margin: 1.8rem auto;
+    font-size: 2.5rem;
+    text-align: center;
+    border-bottom: 6px solid lavender;
+    color: navy;
+}

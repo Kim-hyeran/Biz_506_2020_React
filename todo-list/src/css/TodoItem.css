@@ -1,0 +1,54 @@
+div.todo-item {
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+div.todo-item div {
+    padding: 0 10px;
+}
+
+div.todo-item:hover {
+    background-color: lavender;
+}
+
+div.delete-item {
+    margin-left: auto;
+    color: navy;
+    font-size: 1.5rem;
+    font-weight: 500;
+    opacity: 0;
+}
+
+div.todo-item:hover div.delete-item{
+    opacity: 1;
+    transition: 0.3s linear;
+}
+
+div.checked {
+    text-decoration: line-through;
+    color: #888;
+}
+
+/*
+word-break
+- break-all
+    문자열이 영문일 경우 줄바꿈을 어떻게 할지 설정
+    한글일 경우 한 글자 단위로 줄바꿈
+
+- keep-all
+    한글일 경우 단어(공백) 단위로 줄바꿈
+
+div.todo-text {
+    flex: 1;
+    word-break: break-all;
+    text-align: left;
+}
+*/
+
+div.check-mark {
+    font-size: 1.5rem;
+    line-height: 1rem;
+    color: navy;
+}
