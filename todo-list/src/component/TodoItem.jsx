@@ -3,7 +3,7 @@ import "../css/TodoItem.css"
 
 class TodoItem extends Component {
     render() {
-        const {todo, onToggle} = this.props
+        const {todo, onToggle, onDeleteItem} = this.props
         const onClick = (e, id)=> {
             if(e.target.className === "delete-item") {
                 if(window.confirm("삭제할까요?")) {

@@ -10,10 +10,10 @@ class TodoList extends Component {
          *      매개변수로 즉시 받을 수 있다.
          * 클래스 방식에서는 this.props로부터 필요한 데이터를 분해해야 한다.
          */
-        const {todoList, onToggle} = this.props   // 데이터 분해하기
+        const {todoList, onToggle, onDeleteItem} = this.props   // 데이터 분해하기
 
         const viewTodoList = todoList.map((todo)=> {
-            return <TodoItem key = {todo.id} todo = {todo} onToggle = {onToggle} />
+            return <TodoItem key = {todo.id} todo = {todo} onToggle = {onToggle} onDeleteItem = {onDeleteItem} />
         })
         
         return (
