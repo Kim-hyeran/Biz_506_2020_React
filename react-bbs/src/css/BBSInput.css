@@ -1,0 +1,43 @@
+.input-form {
+    width : 80%;
+    margin: 10px auto;
+    display: flex;
+}
+
+.input-form input,
+.input-form button {
+    margin: 5px 3px;
+}
+
+.input-form input {
+    padding: 0 10px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+
+.input-form input:nth-child(1),
+.input-form input:nth-child(2) {
+    flex: 1;
+}
+
+.input-form input:nth-child(3) {
+    flex: 5;
+}
+
+.input-form button {
+    display: inline-block;
+    flex: 1;
+    font-weight: bold;
+    background-color: darkslategrey;
+    color: white;
+    padding: 12px 25px;
+    border: 1px solid darkslategrey;
+    outline: none;
+    transition: 0.3s linear;
+}
+
+.input-form button:hover {
+    background-color: white;
+    color: darkslategrey;
+    border: 1px solid darkslategrey;
+}
