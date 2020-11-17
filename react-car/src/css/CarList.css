@@ -1,0 +1,20 @@
+.car-list {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 15px auto;
+    padding: 10px;
+}
+
+.car-list thead {
+    background-color: rgba(238, 232, 170, 0.3);
+}
+
+.car-list th,
+.car-list td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.car-list tr:hover {
+    background-color: rgba(152, 251, 152, 0.2);
+}

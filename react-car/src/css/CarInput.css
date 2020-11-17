@@ -1,0 +1,26 @@
+.car-input {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.car-input input {
+    flex: 2;
+    margin-right: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+
+.car-input button {
+    flex: 1;
+    border: none;
+    outline: none;
+    background-color: palegoldenrod;
+    color: #333;
+    transition: 0.4s linear;
+}
+
+.car-input button:hover {
+    background-color: palegreen;
+}
